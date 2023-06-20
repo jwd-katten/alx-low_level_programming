@@ -1,12 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
+ * print_alphabet - print alphabet
+ * main - no parametre
+ * print_alphabet - use a for function using index ASCII
  * Return: Always 0 (Success)
- */
-int main(void)
-{
-	return (0);
-}
+*/
 
+void print_alphabet(void)
+{
+	int ch;
+
+	for (ch = 'a' ; ch <= 'z' ; ch++)
+		_putchar(ch);
+	_putchar('\n');
+}
